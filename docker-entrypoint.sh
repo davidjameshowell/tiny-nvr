@@ -78,7 +78,7 @@ echo "Saving stream in \"$dirName\""
 # start recording with ffmpeg
 ffmpeg -rtsp_transport tcp \
     -y \
-    -stimeout 1000000 \
+    -timeout 1000000 \
     -i "$streamURL" \
     -c copy \
     -f segment \
